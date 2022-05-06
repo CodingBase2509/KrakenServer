@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1700.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KrakenServer", "KrakenServer\KrakenServer.csproj", "{172EA514-0D58-402C-9669-35E6FC97AB28}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{172EA514-0D58-402C-9669-35E6FC97AB28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{172EA514-0D58-402C-9669-35E6FC97AB28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{172EA514-0D58-402C-9669-35E6FC97AB28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{172EA514-0D58-402C-9669-35E6FC97AB28}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {43F0BA99-4FDE-4E30-A2B6-FD7E642EDABD}
+	EndGlobalSection
+EndGlobal
