@@ -58,7 +58,10 @@ namespace KrakenServer
 			_listener = new TcpListener(IPAddress.Parse(HostIp), Port);
 		}
 
-
+		/// <summary>
+        /// Setup the Listener to establish connections with incoming requests
+        /// </summary>
+        /// <returns></returns>
 		public async Task Listen()
         {
 			_listener.Start();
@@ -73,6 +76,10 @@ namespace KrakenServer
             }
         }
 
+		/// <summary>
+        /// Receives messages from the established connetion
+        /// </summary>
+        /// <returns>A <see cref="bool"/> which indicates wether the operation was successful or not</returns>
 		public async Task<bool> Receive()
         {
 			byte[] tempBuffer = Array.Empty<byte>();
@@ -104,6 +111,11 @@ namespace KrakenServer
             }
         }
 
+		/// <summary>
+		/// Send messages back to the established connection through the <see cref="NetworkStream"/>
+		/// </summary>
+		/// <param name="msg">The message which will be send</param>
+		/// <returns>A <see cref="bool"/> which indicates wether the operation was successful or not</returns>
 		public async Task<bool> Send(string msg)
         {
             try
@@ -120,6 +132,10 @@ namespace KrakenServer
             }
         }
 
+		/// <summary>
+        /// Disposes The <see cref="Server"/> Object async
+        /// </summary>
+        /// <returns></returns>
         public async ValueTask DisposeAsync()
         {
 			_stream!.Close();
