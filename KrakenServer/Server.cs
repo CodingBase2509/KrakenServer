@@ -72,7 +72,9 @@ namespace KrakenServer
             {
 				_stream = _client.GetStream();
                 Console.WriteLine($"TcpClient {((IPEndPoint)_client.Client.RemoteEndPoint!).Address} connects to the Server");
-				Status = await Receive();
+				Receive();
+				Listen();
+				return;
             }
         }
 
@@ -98,7 +100,8 @@ namespace KrakenServer
 				{
 					Data = Encoding.UTF8.GetString(tempBuffer, 0, tempBuffer.Length);
 					Console.WriteLine(Data);
-					return true;
+					return await Send(Data);
+					
 				}
 				else
 					return false;
