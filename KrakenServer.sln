@@ -5,6 +5,8 @@ VisualStudioVersion = 25.0.1700.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KrakenServer", "KrakenServer\KrakenServer.csproj", "{172EA514-0D58-402C-9669-35E6FC97AB28}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KrakenServer.Models", "KrakenServer.Models\KrakenServer.Models.csproj", "{467502E6-6685-4F20-A4DC-FC73E954DC9D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{172EA514-0D58-402C-9669-35E6FC97AB28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{172EA514-0D58-402C-9669-35E6FC97AB28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{172EA514-0D58-402C-9669-35E6FC97AB28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{467502E6-6685-4F20-A4DC-FC73E954DC9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{467502E6-6685-4F20-A4DC-FC73E954DC9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{467502E6-6685-4F20-A4DC-FC73E954DC9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{467502E6-6685-4F20-A4DC-FC73E954DC9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
