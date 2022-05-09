@@ -2,8 +2,10 @@
 
 public class Program
 {
-    public static void Main(string[] args)
+    public async static Task Main(string[] args)
     {
+        var Server = new Server("127.0.0.1", 9001);
 
+        await Server.Listen();
     }
 }
